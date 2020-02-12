@@ -20,6 +20,21 @@ read -p "Enter How many Hour" h
 pt=$(( 20*$h))
 echo "PartTimewages :$pt"
 }
-attend
-dailyWages
-partTimeWages
+echo "attend , dailywage ,partTime "
+read -p "chice" ch
+case $ch in
+"attend" )
+ echo "This is attendence case "
+  attend ;;
+"dailywage" )
+   echo "This is dailywage case"
+    dailyWages ;;
+"partTime" )
+echo "This is part time wage case "
+partTimeWages ;;
+* )
+echo "Wrong choice" ;;
+esac
+#attend
+#dailyWages
+#partTimeWages
