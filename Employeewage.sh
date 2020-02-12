@@ -12,13 +12,18 @@ if [ $rnd -eq 1 ]
 function dailyWages()
 {
  d=$(( 8*20 ))
-echo $d
+echo "daily wages : $d"
 }
 function partTimeWages( )
 {
 read -p "Enter How many Hour" h
 pt=$(( 20*$h))
 echo "PartTimewages :$pt"
+}
+function monthlyWages( ){
+dailyWages
+m=$(( 20*d ))
+echo "Monthly wages :$m"
 }
 echo "attend , dailywage ,partTime "
 read -p "chice" ch
@@ -32,6 +37,9 @@ case $ch in
 "partTime" )
 echo "This is part time wage case "
 partTimeWages ;;
+"monthly" )
+echo "This is monthly case"
+ monthlyWages ;;
 * )
 echo "Wrong choice" ;;
 esac
