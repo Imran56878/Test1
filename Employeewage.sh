@@ -25,24 +25,32 @@ dailyWages
 m=$(( 20*d ))
 echo "Monthly wages :$m"
 }
-echo "attend , dailywage ,partTime "
-read -p "chice" ch
+echo "1.attend , 2.dailywage ,3.partTime ,4.monthly"
+read -p "chice:" ch
 case $ch in
-"attend" )
+"1" )
  echo "This is attendence case "
   attend ;;
-"dailywage" )
+"2" )
    echo "This is dailywage case"
     dailyWages ;;
-"partTime" )
+"3" )
 echo "This is part time wage case "
 partTimeWages ;;
-"monthly" )
+"4" )
 echo "This is monthly case"
  monthlyWages ;;
 * )
 echo "Wrong choice" ;;
 esac
+ function TotalHour( )
+{
+read -p "Enter total full day :" st
+read -p "Enter Total hour :" ht
+th=$(( st*8+ht ))
+echo "TotalHour :$th"
+}
+TotalHour
 #attend
 #dailyWages
 #partTimeWages
