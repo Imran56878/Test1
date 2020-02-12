@@ -49,8 +49,12 @@ read -p "Enter total full day :" st
 read -p "Enter Total hour :" ht
 th=$(( st*8+ht ))
 echo "TotalHour :$th"
+if [ $th -gt 99 -o $st -gt 19 ]
+then 
+echo "You have reached for a month "
+else
+ echo "You haven't reached for month"
+fi
 }
 TotalHour
-#attend
-#dailyWages
-#partTimeWages
+
