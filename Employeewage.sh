@@ -14,5 +14,12 @@ function dailyWages()
  d=$(( 8*20 ))
 echo $d
 }
+function partTimeWages( )
+{
+read -p "Enter How many Hour" h
+pt=$(( 20*$h))
+echo "PartTimewages :$pt"
+}
 attend
 dailyWages
+partTimeWages
