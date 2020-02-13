@@ -89,3 +89,5 @@ echo "This is TotalWage2 case"
 * )
 echo "Wrong choice" ;;
 esac
+
+
