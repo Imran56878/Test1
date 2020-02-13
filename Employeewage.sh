@@ -71,3 +71,14 @@ function TotalDailyWages( )
 dailyWages
 }
 TotalDailyWages
+function TotalWage2( )
+{
+read -p "Enter the  numbr of day :" d
+read -p "Enter the hour:" r
+z=$(echo "$d" "$r" |awk '{print ($1*8+$2)*20}')
+echo "totaldailyWages $z"
+echo "End"
+
+
+}
+TotalWage2
