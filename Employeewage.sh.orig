@@ -1,0 +1,35 @@
+echo "Welcome to Employee wage"
+function attend()
+{
+rnd=$(( RANDOM%2 ))
+if [ $rnd -eq 1 ]
+ then 
+   echo "Employee is present "
+ else 
+      echo "Employee is absent "
+  fi
+}
+function dailyWages()
+{
+ d=$(( 8*20 ))
+echo $d
+}
+function partTimeWages( )
+{
+<<<<<<< HEAD
+ read -p "Hour" h
+pt=$(( 20*$h ))
+echo "partTimeWages :$pt"
+=======
+read -p "Enter How many Hour" h
+pt=$(( 20*$h))
+echo "PartTimewages :$pt"
+>>>>>>> UseCase3
+}
+attend
+dailyWages
+partTimeWages
+<<<<<<< HEAD
+
+=======
+>>>>>>> UseCase3

@@ -58,3 +58,11 @@ fi
 }
 TotalHour
 
+function WorkHour( ) 
+{
+ read -p "Enter total day :" x
+ read -p "Enter total hour :" y 
+tho=$(echo "$x" "$y" |awk '{print ($1*8)+$2}')
+echo "total hour :$tho"
+}
+WorkHour
