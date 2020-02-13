@@ -66,3 +66,8 @@ tho=$(echo "$x" "$y" |awk '{print ($1*8)+$2}')
 echo "total hour :$tho"
 }
 WorkHour
+function TotalDailyWages( )
+{
+dailyWages
+}
+TotalDailyWages
